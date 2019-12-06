@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML is HTML code that conveys meaning. It's useful for accessibility (tells screen readers what the elements are and their relationship to each other) and for development (other developers, including future you, will have an easier time understanding the code). An example of semantic HTML would be wrapping text inside a p tag (to signify that the contents of the tags are a paragraph), or wrapping the links at the top of the page inside a nav tag (to show that the links inside the tags are not just any links but site navigation). 
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+One, display:inline elements are by default nested inside of other elements without disrupting the flow of content. Display:block elements, on the other hand, break the flow of content -- the element starts on a new line and the element following a display:block element also starts on a new line. Two, display:block elements can be controlled by setting their width or height (or both). Width and height properties have no effect on display:inline elements. 
 
 3. What are the 4 areas of the box model?
 
+Margin, border, padding, and content.
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+align-items works on the cross-axis, which is perpendicular to the main-axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git is a distributed version control system, which means it monitors code changes and allows developers to be able to save (and then access) multiple versions of their project (commits). This is useful because if a new feature breaks the program, developers can safely roll back the changes. Git also makes it easy for multiple people to work on the same project and then merge their work together (the clone functionality, branches, pull requests, etc).
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -92,7 +102,7 @@ You will also notice there are 10 boxes on the home page that need background co
 * [ x ] Copy and paste your home page navigation and header into the about page
 * [ x ] Update the header image with the about page image
 * [ x ] Link the `Home` navigation item back to the `index.html` page.
-* [ ] Build the rest of the about page layout to match the design
+* [ x ] Build the rest of the about page layout to match the design
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
